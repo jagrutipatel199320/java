@@ -1,0 +1,5 @@
+package abstractMethod;
+
+ public interface Bank {
+	abstract int getIntrestRate() ;
+}

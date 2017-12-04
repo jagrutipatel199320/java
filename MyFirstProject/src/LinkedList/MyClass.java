@@ -1,0 +1,23 @@
+package LinkedList;
+
+import java.util.LinkedList;
+
+public class MyClass {
+	public static void main(String[] args) {
+		LinkedList<String> name =  new LinkedList<String>();
+		name.add("jagruti");
+		name.add("uttam");
+		name.addFirst("krishna");
+		name.addLast("Ayushi");
+		name.removeFirst();
+		name.removeLast();
+		//name.add(1,"index1");
+		//name.remove(2);
+		name.set(1,"Uttam");
+		//name.clear();
+		System.out.println(name.size());
+		for(String x : name)
+			System.out.println(x);
+		
+	}
+}

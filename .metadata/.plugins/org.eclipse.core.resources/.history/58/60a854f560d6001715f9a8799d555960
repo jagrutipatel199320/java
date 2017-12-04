@@ -1,0 +1,13 @@
+package polymorphism;
+
+public class MyClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Bank abc = new Bank_ABC();
+		Bank def = new Bank_DEF();
+		Bank xyz = new Bank_XYZ();
+
+	}
+
+}

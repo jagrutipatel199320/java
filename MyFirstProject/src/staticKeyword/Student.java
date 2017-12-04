@@ -1,0 +1,27 @@
+package staticKeyword;
+
+public class Student {
+
+	int age;
+	String name;
+	static int NoOfStudent = 0;
+	
+	Student(){
+		NoOfStudent++;
+	}
+	public static int getNoOfStudenta() {
+		return  NoOfStudent;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+}

@@ -1,0 +1,11 @@
+package staticKeyword;
+
+public class Hello {
+
+	public static String DoSomething(String msg) {
+		return msg;
+	}
+	public static String DoSomethingElse(String msg) {
+		return msg;
+	}
+}

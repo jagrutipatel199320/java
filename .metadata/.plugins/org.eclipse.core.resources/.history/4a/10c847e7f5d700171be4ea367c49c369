@@ -1,0 +1,17 @@
+package ReadFile;
+
+import java.io.*;
+public class MyClass {
+	public static void main(String[] args) {
+		BufferedReader br = null;
+		try {
+			br =  new BufferedReader(new FileReader("FileName.txt"));
+			String line;
+			while((line = br.readLine()) != null) {
+				System.out.println();
+			}
+		}catch(IOException e) {
+			
+		}
+	}
+}

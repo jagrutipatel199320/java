@@ -1,0 +1,15 @@
+package JUnitTest;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class AddTest {
+
+	@Test
+	void Addtest() {
+		MyJUnitClass jUnit = new MyJUnitClass();
+		fail("Not yet implemented");
+	}
+
+}

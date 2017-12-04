@@ -1,0 +1,22 @@
+package ListItreater;
+import java.util.*;
+
+public class MyClass {
+	public static void main(String[] args) {
+	ArrayList<String> name = new ArrayList<String>();
+	name.add("jagruti");
+	name.add("ayushi");
+	name.add("krishna");
+	name.add("uttam");
+	
+	ListIterator<String> itr = name.listIterator();
+	while(itr.hasNext()) {
+		System.out.println(itr.next());
+	}
+	System.out.println("===================");
+
+	while(itr.hasPrevious()) {
+		System.out.println(itr.previous());
+	}
+	}
+}

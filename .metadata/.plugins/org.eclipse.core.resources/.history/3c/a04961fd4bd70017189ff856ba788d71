@@ -1,0 +1,7 @@
+package LinkedList;
+
+public class MyClass {
+	public static void main(String[] args) {
+		LinkedList<String> name =  new LinkedList<String>();
+	}
+}

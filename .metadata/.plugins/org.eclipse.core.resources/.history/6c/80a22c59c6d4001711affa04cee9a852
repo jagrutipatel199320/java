@@ -1,0 +1,15 @@
+package staticKeyword;
+
+public class MyClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//static member belong to class instead of instance hence we can call static method directly by class name itself
+		Hello hello = new Hello();
+		hello.DoSomething("Hi youstube");
+		
+
+	}
+
+}

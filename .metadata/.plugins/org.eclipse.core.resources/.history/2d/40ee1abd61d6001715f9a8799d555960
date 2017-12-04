@@ -1,0 +1,7 @@
+package MethodOverridding;
+
+public class Bank {
+	public int getIntrestRate() {
+		return 0;
+	}
+}
