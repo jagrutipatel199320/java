@@ -1,0 +1,11 @@
+package application;
+
+import java.awt.event.ActionEvent;
+import java.util.Random;
+public class MainController {
+	public void generateRanddom(ActionEvent event) {
+		Random rand = new Random();
+		int myrand = rand.nextInt(50) + 1;
+		
+	}
+}

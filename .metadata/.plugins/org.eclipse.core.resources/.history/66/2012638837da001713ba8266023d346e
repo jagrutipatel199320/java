@@ -1,0 +1,16 @@
+package application;
+
+import javafx.event.ActionEvent;
+
+public class MainController {
+	@FXML
+	private Label result;
+
+	public void ProcessNumbers(ActionEvent event) {
+		
+	}
+	
+	public void ProcessOperators(ActionEvent event) {
+		
+	}
+}

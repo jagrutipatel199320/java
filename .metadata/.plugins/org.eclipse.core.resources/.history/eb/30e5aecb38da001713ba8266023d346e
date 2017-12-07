@@ -1,0 +1,35 @@
+package application;
+
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.Button;
+
+
+public class MainController {
+	@FXML
+	private Label result;
+	private long number1 = 0;
+	private String operator = "";
+	private boolean start = true;
+	@FXML
+	public void ProcessNumbers(ActionEvent event) {
+		if(start) {
+			result.setText("");
+			start = false;
+		}
+		 String value = ((Button)event.getSource()).getText();
+		 result.setText(result.getText()+value);
+	}
+	@FXML
+	public void ProcessOperators(ActionEvent event) {
+		 String value = ((Button)event.getSource()).getText();
+		 if(!value.equals("=")) {
+			 if(!operator.isEmpty()) {
+				 return;
+			 }
+		 }
+
+	}
+}

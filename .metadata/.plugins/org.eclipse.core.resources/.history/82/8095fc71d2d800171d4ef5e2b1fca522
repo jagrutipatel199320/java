@@ -1,0 +1,15 @@
+package application;
+
+import java.awt.Label;
+import javafx.event.ActionEvent;
+import java.util.Random;
+public class MainController {
+	private Label mymsg;
+	public void generateRandom(ActionEvent event) {
+		Random rand = new Random();
+		int myrand = rand.nextInt(50) + 1;
+		mymsg.setText(Integer.toString(myrand));
+		System.out.println(Integer.toString(myrand));
+		
+	}
+}

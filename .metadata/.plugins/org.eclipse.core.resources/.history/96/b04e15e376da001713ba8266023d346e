@@ -1,0 +1,46 @@
+package application;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.control.SelectionMode;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+
+public class MainController implements Initializable {
+	@FXML
+	public ComboBox<String> combobox;
+	
+	@FXML
+	private Label mylabel;
+
+	@FXML
+	private ListView<String> listview;
+	ObservableList<String> list = FXCollections.observableArrayList("jagruti","uttam");
+	@Override
+	public void initialize(URL arg0, ResourceBundle arg1) {
+		// TODO Auto-generated method stub		
+		//combobox.setItems(list);	
+		listview.setItems(list);
+		listview.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+	}
+	
+	public void comboChanged(ActionEvent event) {
+	//	mylabel.setText(combobox.getValue());
+		combobox.getItems().addAll("a","b");
+	}
+	
+	public void buttonAction(ActionEvent event) {
+		//	mylabel.setText(combobox.getValue());
+			//combobox.getItems().addAll("a","b");
+			//listview.getItems().addAll("a","b");
+			
+		ObservableList<String> names = listview.getSelectionModel().getSelectedItems();
+		}
+}
