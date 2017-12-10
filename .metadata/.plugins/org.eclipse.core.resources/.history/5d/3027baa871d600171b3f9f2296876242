@@ -1,7 +1,0 @@
-package interfaceJava;
-
-public class BankABC implemets Bank {
-	public int getIntrestRate() {
-		return 5;
-	}
-}
